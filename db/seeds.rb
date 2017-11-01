@@ -8,7 +8,7 @@
 10.times do
   Restaurant.create(
     name: Faker::Hipster.sentence(2),
-    address: Faker::Address.street_name Faker::Address.city,
+    address: Faker::Address.city,
     phone_number: Faker::PhoneNumber.cell_phone,
     category: Faker::Address.country
     )
