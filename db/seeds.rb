@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do
+  Restaurant.create(
+    name: Faker::Hipster.sentence(2),
+    address: Faker::Address.street_name Faker::Address.city,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    category: Faker::Address.country
+    )
+end
